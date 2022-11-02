@@ -20,7 +20,13 @@ namespace WinFormsApp4
             }
            
             listBox.Items.Add("La suma TOTAL es: "+suma.ToString());
+
             //Test
+        }
+
+        private void nUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,9 +39,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 36);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(37, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 15);
+            this.label1.Size = new System.Drawing.Size(178, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Calcular suma desde 1hasta: ";
             // 
@@ -49,15 +50,15 @@
             // 
             this.listBox.FormattingEnabled = true;
             this.listBox.ItemHeight = 15;
-            this.listBox.Location = new System.Drawing.Point(38, 108);
+            this.listBox.Location = new System.Drawing.Point(37, 95);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(229, 199);
+            this.listBox.Size = new System.Drawing.Size(239, 199);
             this.listBox.TabIndex = 1;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(38, 73);
+            this.checkBox1.Location = new System.Drawing.Point(37, 70);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(148, 19);
             this.checkBox1.TabIndex = 2;
@@ -66,16 +67,17 @@
             // 
             // nUpDown
             // 
-            this.nUpDown.Location = new System.Drawing.Point(203, 28);
+            this.nUpDown.Location = new System.Drawing.Point(212, 29);
             this.nUpDown.Name = "nUpDown";
             this.nUpDown.Size = new System.Drawing.Size(64, 23);
             this.nUpDown.TabIndex = 3;
+            this.nUpDown.ValueChanged += new System.EventHandler(this.nUpDown_ValueChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(38, 326);
+            this.button1.Location = new System.Drawing.Point(37, 300);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(107, 23);
             this.button1.TabIndex = 4;
             this.button1.Text = "Iniciar";
             this.button1.UseVisualStyleBackColor = true;
@@ -92,7 +94,7 @@
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calcular Form";
             ((System.ComponentModel.ISupportInitialize)(this.nUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
